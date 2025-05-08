@@ -9,7 +9,10 @@ class NcFile:
         Initializes the NcFile object by creating a NetCDF file.
 
         """
-        os.makedirs(os.path.dirname(full_path), exist_ok=True)
+
+        directory = os.path.dirname(full_path)
+        if directory:
+            os.makedirs(directory, exist_ok=True)
 
         self.filepath = full_path
         self.ffile = format_file
