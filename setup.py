@@ -1,18 +1,15 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name="ncfiles",
+    name="fdm",
     version="0.0",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    install_requires=[
-        "netCDF4",
-    ],
+    py_modules=["__init__"],
+    install_requires=["netCDF4", "time", "os"],
     author="Nramirez",
-    description="Library to save simulations on a NetCDF",
+    description="Module to save simulations within a NetCDF file",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/nramirez-f/NcViewer",
+    url="https://github.com/nramirez-f/NcFiles",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
