@@ -4,7 +4,7 @@ setup(
     name="fdm",
     version="0.0",
     py_modules=["__init__"],
-    install_requires=["netCDF4", "time", "os"],
+    install_requires=["netCDF4"],
     author="Nramirez",
     description="Module to save simulations within a NetCDF file",
     long_description=open("README.md").read(),
