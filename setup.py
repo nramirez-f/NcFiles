@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="fdm",
+    name="ncfiles",
     version="0.0",
     py_modules=["__init__"],
     install_requires=["netCDF4"],
